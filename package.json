@@ -1,0 +1,8 @@
+{
+  "name": "node-ejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/madson7/node-ejs.git",
+  "author": "Madson Ramos",
+  "license": "MIT"
+}

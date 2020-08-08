@@ -1,8 +1,21 @@
 {
-  "name": "node-ejs",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/madson7/node-ejs.git",
-  "author": "Madson Ramos",
-  "license": "MIT"
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.18.2",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-ejs-layouts": "^2.3.1",
+    "express-session": "^1.17.1",
+    "faker": "^4.1.0",
+    "mongodb": "^3.6.0",
+    "mongoose": "^5.9.28",
+    "morgan": "^1.10.0",
+    "nodemon": "^1.12.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  }
 }

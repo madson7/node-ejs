@@ -10,12 +10,18 @@
     "express": "^4.16.2",
     "express-ejs-layouts": "^2.3.1",
     "express-session": "^1.17.1",
-    "faker": "^4.1.0",
     "mongodb": "^3.6.0",
     "mongoose": "^5.9.28",
     "morgan": "^1.10.0",
-    "nodemon": "^1.12.1",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0",
+    "nodemon": "^2.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/madson7/node-ejs"
   }
 }

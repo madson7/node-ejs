@@ -7,14 +7,6 @@ router.get('/', (req, res, next) => {
     res.render('pages/home')
 });
 
-// router.get('/', (req, res, next) => {
-//   res.render('pages/components/header')
-// });
-
-router.get('/admin', (req, res, next) => {
-res.render('pages/admin/signin')
-});
-
 router.get('/about', (req, res) => {
     var users = [{
         name: faker.name.findName(),

@@ -9,6 +9,7 @@ const morgan            = require('morgan');
 const app = express();
 require('./database');
 require('./passport/local-auth');
+require('./passport/local-authAdmin');
 
 app.set('port', process.env.PORT || 3000);
 
@@ -21,11 +22,13 @@ app.use(express.static(__dirname + '/public'));
 // middlewares
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
+
 app.use(session({
   secret: 'mysecretsession',
   resave: false,
   saveUninitialized: false
 }));
+
 app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
@@ -38,6 +41,7 @@ app.use((req, res, next) => {
 });
 
 app.use('/', require('./routes/index'));
+app.use('/jacare', require('./routes/admin'));
 
 app.listen(app.get('port'), () => {
     console.log('server on port', app.get('port'));
